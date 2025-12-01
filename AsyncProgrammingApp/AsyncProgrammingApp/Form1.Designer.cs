@@ -30,6 +30,7 @@
         {
             btnHello = new Button();
             btnPrintSync = new Button();
+            btnThread = new Button();
             SuspendLayout();
             // 
             // btnHello
@@ -52,11 +53,22 @@
             btnPrintSync.UseVisualStyleBackColor = true;
             btnPrintSync.Click += btnPrintSync_Click;
             // 
+            // btnThread
+            // 
+            btnThread.Location = new Point(58, 258);
+            btnThread.Name = "btnThread";
+            btnThread.Size = new Size(112, 34);
+            btnThread.TabIndex = 2;
+            btnThread.Text = "Thread";
+            btnThread.UseVisualStyleBackColor = true;
+            btnThread.Click += btnThread_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(866, 458);
+            Controls.Add(btnThread);
             Controls.Add(btnPrintSync);
             Controls.Add(btnHello);
             Name = "Form1";
@@ -68,5 +80,6 @@
 
         private Button btnHello;
         private Button btnPrintSync;
+        private Button btnThread;
     }
 }
